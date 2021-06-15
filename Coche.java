@@ -10,8 +10,6 @@ package tarea1ut05;
  * @author irene
  */
 public class Coche extends VehiculoPersona{
-    
-    //atributos heredados
 
     //constante
     private final static double CANTIDAD_EXTRA = 1.5; //por ser un tipo de vehiculo de personas
@@ -39,21 +37,4 @@ public class Coche extends VehiculoPersona{
         info += "\n\tTipo: Coche\n\tPrecio alquiler: " + this.precioTotal() + " euros\n";
         return info;    
     }
-    
-    /*public static void main(String[] args) {
-        Coche c1 = new Coche("gpl2345",3);
-        System.out.println(c1.getDias());
-        System.out.println(c1.getPlazas());
-        System.out.println(c1.getMatricula());
-        
-        c1.setDias(4);
-        System.out.println(c1.getDias());
-        
-        System.out.println(c1.precioTotal());
-        
-        System.out.println(c1.toString());
-          
-    }*/
-    
-    
 }
