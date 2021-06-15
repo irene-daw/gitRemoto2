@@ -13,11 +13,11 @@ package tarea1ut05;
 public abstract class Vehiculo {
     
     /**
-     * Atributo no modificable que contiene la matrícula de un vehículo.
+     * Atributo que contiene la matrícula de un vehículo.
      */
     private final String matricula;
     /**
-     * Atributo que contiene el número de plazas d eun vehículo.
+     * Atributo que contiene el número de plazas de un vehículo.
      */
     private int plazas;
     /**
@@ -25,7 +25,7 @@ public abstract class Vehiculo {
      */
     private int dias;
     /**
-     * Atributo constante no modificable que define el precio base de todos los vehículos.
+     * Atributo constante que define el precio base de todos los vehículos.
      */
     private final static int PRECIO_BASE = 50; //50 euros/dia
     
@@ -35,9 +35,6 @@ public abstract class Vehiculo {
      * @param matricula
      * @param plazas 
      */
-//constructor
-    //no se incluye los días en el constructor ya que el empleado
-    //los introducirá en el método que obtiene el precio del alquiler
     public Vehiculo(String matricula, int plazas) { 
         this.matricula = matricula.toUpperCase();
         this.plazas = plazas;
